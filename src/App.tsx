@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Landing from "./views/Landing/landing";
-// import SignUp from "./views/SignUp/signup";
-import Signin from "./views/Signin/signin";
+import Landing from "./views/Landing/Landing";
+import Signup from "./views/Signup/Signup";
+import Signin from "./views/Signin/Signin";
 import "./App.css";
 
 const App: React.FC = () => {
@@ -9,7 +9,7 @@ const App: React.FC = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
-        {/* <Route path="/signup" element={<SignUp />} /> */}
+        <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Signin />} />
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
